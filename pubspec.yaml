@@ -1,0 +1,61 @@
+name: business_manager_app
+description: A Flutter app for managing quotations, invoices, and customers.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Default Flutter icons
+  cupertino_icons: ^1.0.8
+
+  # For saving and loading customer/product/quotation data locally
+  shared_preferences: ^2.3.2
+
+  # For sharing quotation/invoice files (PDF, text, etc.)
+  share_plus: ^12.0.0
+
+  # For PDF creation
+  pdf: ^3.11.0
+  printing: ^5.13.1
+ 
+  signature: ^5.4.1
+
+  # For path support (saving PDFs or exports)
+  path_provider: ^2.1.4
+
+  # For image picking (optional future feature)
+  image_picker: ^1.1.2
+
+  # For URL launching (optional)
+  url_launcher: ^6.3.1
+
+  # For better state management
+  provider: ^6.1.2
+
+  # For date formatting
+  intl: ^0.20.2
+
+  # For using Font Awesome icons
+  font_awesome_flutter: ^10.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.webp
+    - assets/images/
+    - assets/icons/
+  
